@@ -51,6 +51,6 @@ export const adminRouter = createTRPCRouter({
                 id: input.id
             }
         });
-        return { deleteClient, message: "Client deleted successfully" }
+        return { deleteClient, message: "Client deleted successfully!" }
     })
 });

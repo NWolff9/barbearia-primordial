@@ -10,8 +10,13 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model Example {
-    id        String   @id @default(cuid())
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
+model Client {
+    id String @id @default(cuid())
+    name String
 }
+
+model Admin {
+    id String @id @default(cuid())
+    name String
+    password String 
+}   
